@@ -1,0 +1,387 @@
+body {
+    font-family: 'AbadiMT-CondensedLight';
+    font-size: 1em;
+    width: 100%;
+}
+
+#inicio, #trivia {
+    background-size: cover !important;
+    position: absolute;
+    height: 800px;
+    width: 100%;
+}
+
+input[type=button] {
+    background-color: black;
+    border: 0;
+    margin: 200px 0 0 7%;
+    border-radius: 20px;
+    padding: 10px 30px 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.7em;
+    font-family: 'AbadiMT-CondensedLight';
+}
+
+h1 {
+    font-family: AbadiMT-CondensedExtraBold;
+    color: #001162;
+    font-size: 5.125em;
+    text-transform: uppercase;
+    margin: 80px 0 0 7%;
+}
+
+h1 > span {
+    display: block;
+}
+
+h1 > span + span {
+    font-family: 'AbadiMT-CondensedLight';
+    color: black;
+    display: block;
+    font-size: 4.688rem;
+}
+
+#inicio {
+    z-index: 1;
+    left: 0;
+    background: url('imgs/fondo-principal.jpg') no-repeat;
+}
+
+#inicio > img + h1 + p {
+    margin: 50px 0 0 7%;
+    font-size: 2.813em;
+    line-height: 30px;
+}
+
+#inicio > img + h1 + p > span {
+    display: block;
+}
+
+#inicio > img + h1 + p > strong {
+    text-transform: uppercase;
+    font-family: AbadiMT-CondensedExtraBold;
+}
+
+#inicio > img + h1 + p + img {
+    position: absolute;
+    right: 6%;
+    top: 350px;
+    z-index: 3;
+}
+
+img[alt=Spotify] {
+    position: absolute;
+    top: 20px;
+    right: 6%;
+}
+
+#inicio img[alt=BMW] {
+    position: absolute;
+    right: 6%;
+    top: 700px;
+}
+
+#trivia {
+    display: none;
+    z-index: 0;
+    left: 0;
+    background: url('imgs/pasos-fondo.jpg') no-repeat;
+}
+
+#trivia img[alt=BMW] {
+    margin-top: 50px;
+}
+
+#vacaciones, #modelo, #formulario, #spotify {
+    width: 60%;
+    margin-left: 20%;
+}
+
+#vacaciones {
+    position: static;
+    width: 60%;
+    margin-left: 20%;
+}
+
+input[value=siguiente] {
+    margin: 0;
+}
+
+.select {
+    width: 605px;
+    font-family: AbadiMT-CondensedLight;
+    background: url('imgs/select-personalizado.jpg') no-repeat;
+    height: 46px;
+    overflow: hidden;
+    color: rgba(132, 132, 132, 0.5);
+    font-size: 2.3em;
+    margin: 100px auto 0;
+}
+
+#combo {
+    width: 605px;
+    height: 46px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    position: absolute;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+#combo option {
+    font-family: AbadiMT-CondensedExtraBold;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.estructura {
+    text-align: center;
+}
+
+.estructura p {
+    font-family: AbadiMT-CondensedExtraBold;
+    color: #001162;
+    font-size: 5.625em;
+    margin-top: 60px;
+    line-height: 30px;
+    margin-left: 2px;
+}
+
+.estructura p > span {
+    color: black;
+    font-family: 'AbadiMT-CondensedLight';
+    margin-top: 20px;
+    font-size: 2.813rem;
+    line-height: 25px;
+}
+
+.estructura p > span > span {
+    display: block;
+}
+
+.estructura p + div {
+    width: 200px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.estructura p + div > div {
+    float: left;
+    margin-left: 13px;
+}
+
+.estructura p.lugar, .estructura p.modelo {
+    display: block;
+    font-size: 3em;
+    float: left;
+    text-transform: uppercase;
+    margin: 0;
+    color: black;
+}
+
+.estructura p.modelo {
+    font-size: 1.1em !important;
+    line-height: 20px;
+}
+
+#vacaciones ul {
+    list-style: none;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#vacaciones ul > li + li {
+    margin-top: 14px;
+}
+
+#vacaciones ul > li + li + li {
+    margin-top: 22px;
+}
+
+#vacaciones ul li {
+    padding-top: 80px;
+}
+
+#trivia_btn {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    bottom: 160px;
+    margin-left: -100px
+}
+
+#formulario form {
+    clear: left;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#formulario label {
+    font-family: 'AbadiMT-CondensedLight';
+    display: block;
+    font-size: 1.5em;
+}
+
+#formulario input {
+    font-size: 1.5em;
+    width: 60%;
+    border: 0;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#formulario div {
+    text-align: center;
+}
+
+#spotify iframe {
+    clear: left;
+    display: block;
+    margin: 100px auto 0;
+}
+
+@media only screen and (max-width: 992px) {
+    #inicio > img + h1 + p + img {
+        width: 50%;
+    }
+
+    #vacaciones ul {
+        margin-top: 20px;
+    }
+
+    #vacaciones ul li {
+        padding: 0;
+        margin: 10px;
+    }
+
+    #trivia_btn {
+        bottom: 40px;
+    }
+
+    .select {
+        width: 355px;
+        background: url('imgs/select-personalizado-medium.jpg') no-repeat;
+        margin: 180px auto 0;
+    }
+
+    #combo {
+        width: 355px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #inicio h1 {
+        font-size: 4em;
+    }
+
+    h1 > span + span {
+        font-size: 3.688rem;
+    }
+
+    #inicio > img + h1 + p + img {
+        position: static;
+        display: inline-block;
+        margin-top: 50px;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #inicio input {
+        width: 200px;
+        position: absolute;
+        left: 50%;
+        bottom: 60px;
+        margin-left: -100px
+    }
+
+    #inicio {
+        background-image: url('imgs/fondo-principal-min.jpg');
+    }
+
+    #trivia {
+        background-image: url('imgs/pasos-fondo-min.jpg');
+    }
+
+    .select {
+        width: 205px;
+        background: url('imgs/select-personalizado-small.jpg') no-repeat;
+        margin: 180px auto 0;
+        font-size: 1.4em;
+    }
+
+    #combo {
+        width: 205px;
+    }
+
+    #formulario input {
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #inicio h1 {
+        font-size: 3em;
+    }
+
+    h1 > span + span {
+        font-size: 2.5rem;
+    }
+
+    #inicio > img + h1 + p {
+        margin: 50px 0 0 7%;
+        font-size: 2.1em;
+        line-height: 20px;
+    }
+
+    #inicio > img + h1 + p + img {
+        margin-top: 60px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #inicio input {
+        bottom: 20%;
+    }
+
+    #inicio img[alt=BMW] {
+        bottom: 5%;
+    }
+
+    #vacaciones, #modelo, #formulario, #spotify {
+        width: 100%;
+        margin: 0;
+    }
+
+    #formulario input {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@font-face {
+    font-family: 'AbadiMT-CondensedExtraBold';
+    src: url('original_ufonts.com_abadi-mt-condensed-extra-bold.eot?#iefix') format('embedded-opentype'),
+    url('original_ufonts.com_abadi-mt-condensed-extra-bold.woff') format('woff'),
+    url('original_ufonts.com_abadi-mt-condensed-extra-bold.ttf') format('truetype'),
+    url('original_ufonts.com_abadi-mt-condensed-extra-bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AbadiMT-CondensedLight';
+    src: url('original_ufonts.com_abadi-mt-condensed-light.eot?#iefix') format('embedded-opentype'),
+    url('original_ufonts.com_abadi-mt-condensed-light.woff') format('woff'),
+    url('original_ufonts.com_abadi-mt-condensed-light.ttf') format('truetype'),
+    url('original_ufonts.com_abadi-mt-condensed-light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

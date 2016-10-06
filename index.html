@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia BMW - Spotify</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/programacion.js"></script>
+</head>
+<body>
+<section id="inicio">
+    <img src="style/imgs/spotify-logo.png" alt="Spotify">
+    <h1>Hay un BMW para<span>cada personalidad.</span><span>Descubre cuál eres tu.</span></h1>
+    <p><span>Responde la trivia y escucha la playlist</span>
+        que <strong>bmw</strong> armó para tí.</p>
+    <img id="bmw" src="style/imgs/autob.png" alt="Auto">
+    <input type="button" value="comenzar">
+    <img src="style/imgs/bmw-logo.png" alt="BMW">
+</section>
+<section id="trivia">
+    <input type="hidden" id="hidden">
+    <img src="style/imgs/spotify-logo.png" alt="Spotify">
+    <div id="vacaciones">
+        <ul class="row text-center">
+            <li class="col-md-4"><img src="style/imgs/playa.png" alt="playa"></li>
+            <li class="col-md-4"><img src="style/imgs/ciudad.png" alt="ciudad"></li>
+            <li class="col-md-4"><img src="style/imgs/montaña.png" alt="montaña"></li>
+        </ul>
+    </div>
+    <div id="modelo">
+        <div class="select">
+            <select name="combo" id="combo">
+                <option selected disabled>Modelo</option>
+                <option>BMW Serie 3 Sedan 2016</option>
+                <option>BMW Serie 5 Sedán 2016</option>
+                <option>BMW Serie 7 Sedan 2016</option>
+                <option>BMW M3 Sedán 2016</option>
+                <option>BMW M5 Sedán 2016</option>
+            </select>
+        </div>
+    </div>
+    <div id="formulario">
+        <form>
+            <label>
+                ¿Cuántos años se vé manejando este vehículo?
+            </label>
+            <div>
+                <input type="number">
+            </div>
+
+            <label>
+                Nombre
+            </label>
+            <div>
+                <input type="text">
+            </div>
+            <label>
+                Email
+            </label>
+            <div>
+                <input type="email">
+            </div>
+        </form>
+    </div>
+    <div id="spotify" class="row">
+        <div class="hidden-xs">
+            <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf"
+                    width="300"
+                    height="380" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+        <div class="hidden-lg hidden-md hidden-sm">
+            <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:3rgsDhGHZxZ9sB9DQWQfuf"
+                    width="200"
+                    height="380" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+    </div>
+    <div id="trivia_btn" class="text-center">
+        <input type="button" value="siquiente">
+    </div>
+</section>
+</body>
+</html>
